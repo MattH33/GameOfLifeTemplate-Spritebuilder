@@ -10,10 +10,11 @@
 
 @interface Grid : CCSprite
 
-// will be used to store the current game stats that will be displayed in the game.
+//Will be used to store the current game stats that will be displayed in the game.
 @property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
 
+//Creates methods that are defined in the .m file.
 - (void)evolveStep;
 - (void)countNeighbors;
 - (void)updateCreatures;

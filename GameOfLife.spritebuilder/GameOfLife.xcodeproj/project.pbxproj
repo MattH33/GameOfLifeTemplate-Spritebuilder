@@ -154,12 +154,12 @@
 			children = (
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
-				B7378992180767190076A88C /* MainScene.h */,
-				B7378993180767190076A88C /* MainScene.m */,
-				34B8D0E61BF4385E005212DB /* Grid.h */,
-				34B8D0E71BF4385E005212DB /* Grid.m */,
 				34B8D0EF1BF43889005212DB /* Creature.h */,
 				34B8D0F01BF43889005212DB /* Creature.m */,
+				34B8D0E61BF4385E005212DB /* Grid.h */,
+				34B8D0E71BF4385E005212DB /* Grid.m */,
+				B7378992180767190076A88C /* MainScene.h */,
+				B7378993180767190076A88C /* MainScene.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";

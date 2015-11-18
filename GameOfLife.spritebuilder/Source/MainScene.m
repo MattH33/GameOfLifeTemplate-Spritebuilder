@@ -10,12 +10,15 @@
 #import "Grid.h"
 
 @implementation MainScene {
+    
+    //Connects the Spritebuilder objects to code.
     Grid *_grid;
     CCTimer *_timer;
     CCLabelTTF *_generationLabel;
     CCLabelTTF *_populationLabel;
 }
 
+//Initializes the timer.
 - (id)init
 {
     self = [super init];
@@ -27,19 +30,19 @@
     return self;
 }
 
-//this tells the game to call the method called 'step' every half second.
+//Starts the method 'step' when the play button is tapped.
 - (void)play
 {
     [self schedule:@selector(step) interval:0.5f];
 }
 
-//this tells the game to call a stop the method called 'step' when the pause button is tapped.
+//Stops the method 'step' when the pause button is tapped.
 - (void)pause
 {
     [self unschedule:@selector(step)];
 }
 
-// this method will get called every half second when you hit the play button and will stop getting called when you hit the pause button. update the stats and gamestate (generation, alive/dead creatures)
+//This method will get called every half second when you hit the play button and will stop getting called when you hit the pause button. It will update what the current generation is and how many alive creatures there are.
 - (void)step
 {
     [_grid evolveStep];
